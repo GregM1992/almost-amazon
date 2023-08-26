@@ -28,7 +28,7 @@ We will be learning about the following:
 - Change `.sample.env` file name to `.env`
 
 
-## TODO 1 - Get Setup
+##  1 - Get Setup
 In preparation for next week, complete the following in lab:
 - [Firebase Walkthrough Videos ~15 minutes](https://vimeo.com/showcase/codetracker-firebase)
   - Create a project called `Almost Amazon`
@@ -59,7 +59,7 @@ In preparation for next week, complete the following in lab:
   
   - This should bring back the Login Button
 
-## TODO 2 - Look at the Code...
+##  2 - Look at the Code...
   - Take a look at the layout of the application. Start in `main.js` and follow the flow to get up to speed.
     - Look at the components, events, helpers, and views
 
