@@ -1,7 +1,7 @@
 import { getAuthors, getFaveAuthors } from '../api/authorData';
-import { booksOnSale, getBooks } from '../api/bookData';
+import { booksOnSale, getBooks, searchBooks } from '../api/bookData';
 import { showAuthors } from '../pages/authors';
-import { showBooks } from '../pages/books';
+import { emptyBooks, showBooks } from '../pages/books';
 import { signOut } from '../utils/auth';
 
 // navigation events
@@ -34,6 +34,13 @@ const navigationEvents = () => {
 
     // WHEN THE USER PRESSES ENTER, MAKE THE API CALL AND CLEAR THE INPUT
     if (e.keyCode === 13) {
+      searchBooks(searchValue).then((search) => {
+        if (search.length) {
+          showBooks(search);
+        } else {
+          emptyBooks();
+        }
+      });
       // MAKE A CALL TO THE API TO FILTER ON THE BOOKS
       // IF THE SEARCH DOESN'T RETURN ANYTHING, SHOW THE EMPTY STORE
       // OTHERWISE SHOW THE STORE
