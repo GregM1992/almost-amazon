@@ -1,15 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Gluten:wght@900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-  background-color: black;
+  background-color: rgb(17, 38, 59);
 }
 
 .navbar-dark .navbar-brand {
-  font-family: "Oregano", cursive !important;
-  color: red;
+  font-family: "Gluten", !important;
+  color: rgb(78, 116, 126);
   font-weight: 900;
   font-size: 2em;
+  text-shadow:1px 1px 5px black;
 }
 
 .cart-items {
@@ -50,7 +52,7 @@ body {
     width: 60%;
     margin: auto;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
 
     #formModal {
       color: black;
@@ -66,12 +68,17 @@ body {
     justify-content: center;
 
     .card {
+      font-family: "Concert One";
+      background-color: rgb(25, 27, 31);
       width: 300px;
       margin: 5px;
+      color: rgb(179, 203, 232) ;
 
       .sale-badge {
         font-size: 1em;
-        background-color: blue;
+        text-shadow: 0 0 1px rgb(124, 187, 218);
+        color: rgb(35, 51, 82);
+        background-color: rgb(76, 130, 154);
       }
     }
 
@@ -84,10 +91,21 @@ body {
 }
 
 #view {
-  width: 90%;
+  width: 25%;
   margin: auto;
-
+  
+  .card {
+    font-family:"Concert One" ;
+    background-color: rgb(80, 105, 106);
+    color: rgb(0, 0, 0);
+  }
+  .btn {
+    margin: auto;
+  }
   .details {
+    font-family:"Concert One" ;
+    text-shadow: 0 0 1px rgb(124, 187, 218);
+    color: rgb(35, 51, 82);
     min-width: 50%;
     max-width: 60%;
   }
