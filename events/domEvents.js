@@ -26,7 +26,7 @@ const domEvents = (user) => {
       }
     }
 
-    if (e.target.id.includes('delete-author-btn')) {
+    if (e.target.id.includes('delete-author')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
         const [, firebaseKey] = e.target.id.split('--');
